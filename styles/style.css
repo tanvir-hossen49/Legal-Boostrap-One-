@@ -1,0 +1,77 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* common styles */
+h1,
+h2,
+h3 {
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+}
+.btn {
+  background-color: #b68c5a;
+  font-size: 18px;
+  font-weight: 600;
+}
+.banner p,
+.carousel-item p {
+  color: #e7e7e7;
+}
+p {
+  color: #707070;
+}
+footer p,
+a,
+li {
+  color: #cfcfcf;
+}
+/*---------------------
+     bannner section
+----------------------- */
+.banner {
+  height: 550px;
+  background-image: url("../asset/images/Rectangle 5.png"),
+    url("../asset/images/banner.png");
+
+  background-repeat: no-repeat;
+}
+
+/* ---------------
+    Legal Practice Section
+------------------
+ */
+.legal-practice .card:hover {
+  background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+}
+.legal-practice img {
+  width: 71.8px;
+  height: 72.34px;
+}
+
+/* ---------------
+    our client section
+------------------
+ */
+.carousel-item {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:first-child {
+  background-image: url("../asset/images/Rectangle 7.png"),
+    url("../asset/images/slider imges/slider-1.jpg");
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../asset/images/Rectangle 7.png"),
+    url("../asset/images/slider imges/slider-2.jpg");
+}
+.carousel-item:last-child {
+  background-image: url("../asset/images/Rectangle 7.png"),
+    url("../asset/images/slider imges/slider-3.jpg");
+}

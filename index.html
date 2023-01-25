@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Website</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome icon cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <!-- nav start -->
+        <nav class="navbar navbar-expand-lg navbar-light mt-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="asset/images/icon/logo2.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-nav-item"
+                    aria-controls="toggle-nav-item" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggle-nav-item">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="#services">Services
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="#">Cases
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="#">Blog
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link" href="#">Contact Us
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn p-3 text-white rounded" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Free Consultation</button>
+
+                        <!-- Modal start-->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Please Fill Up This form For Free
+                                            Consultation:</h5>
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- modal body start  -->
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="1234 Main St">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                                <input type="text" class="form-control" id="inputAddress2"
+                                                    placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                            </div>
+                                        </form>
+                                        <!-- modal body end -->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn text-white"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn text-white">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <!-- banner start -->
+        <div class="banner mt-5 rounded d-flex flex-column justify-content-center align-items-center">
+            <div class="w-75">
+                <h1 class="display-1 fw-bold text-white text-center">We Provide Effective Legal Solutions</h1>
+                <p class="text-white text-center mt-4">We are a law firm that doesn’t fear the difficult or the
+                    unknown.Any legal problem you may have will be solved by our experienced
+                    lawyers</p>
+
+                <form class="d-md-flex mt-4 w-100">
+                    <input type="text" class="form-control p-3 " placeholder="Search your services">
+                    <button type="submit" class="btn text-white ms-md-4 mt-md-0 mt-4 py-3 px-4">Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- banner end -->
+    </header>
+
+    <main class="container mb-5">
+        <!-- The Legal Practice section start -->
+        <section class="mt-5 legal-practice text-center" id="services">
+            <h2 class="pt-5 pb-4">The Legal Practice Area</h2>
+            <p>
+                Below are the laws under which we provide the services:</p>
+
+            <div class="row mt-4 g-0 ">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-0">
+                            <div class="text-center">
+                                <img src="asset/images/icon/business.png" alt="Business">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Business Law</h3>
+                                <p class="card-text">Commercial law, also known as mercantile law or trade law, is the
+                                    body of law that applies to the rights, relations, and conduct of persons and
+                                    business engaged in commerce, merchandising, trade, and sales.</p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-top-0">
+                            <div class="text-center">
+                                <img src="asset/images/icon/criminal.png" alt="">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Criminal Law</h3>
+                                <p class="card-text">Criminal law is the body of law that relates to crime. It
+                                    prescribes conduct perceived as threatening, harmful, or otherwise endangering to
+                                    the property, health, safety, and moral welfare of people inclusive of one's self.
+                                </p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-0">
+                            <div class="text-center">
+                                <img src="asset/images/icon/child.png" alt="">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Child Support</h3>
+                                <p class="card-text">Child support is an ongoing, periodic payment made by a parent for
+                                    the financial benefit of a child following the end of a marriage or other similar
+                                    relationship.</p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-0 border-top">
+                            <div class="text-center">
+                                <img src="asset/images/icon/education.png" alt="">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Education Law</h3>
+                                <p class="card-text">Education law involves a diverse range of issues from representing
+                                    children with poor access to education to special education law to education reform.
+                                    American laws mandate that every child be given the opportunity to an education.</p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-bottom-0">
+                            <div class="text-center">
+                                <img src="asset/images/icon/divorce.png" alt="">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Divorce Law</h3>
+                                <p class="card-text">Every nation in the world allows its residents to divorce under
+                                    some conditions except the Philippines and the Vatican City, an ecclesiastical
+                                    sovereign city-state, which has no procedure for divorce. In these two countries,
+                                    laws only allow annulment of marriages. </p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-group">
+                        <div class="card p-4 border-0 border-top">
+                            <div class="text-center">
+                                <img src="asset/images/icon/tax.png" alt="">
+                            </div>
+                            <div class="card-body my-4">
+                                <h3 class="card-title pb-4">Tax Law</h3>
+                                <p class="card-text">Tax law or revenue law is an area of legal study in which public or
+                                    sanctioned authorities, such as federal, state and municipal governments use a body
+                                    of rules and procedures to assess and collect taxes in a legal context. </p>
+                            </div>
+                            <div class="text-center"><img src="asset/images/icon/Frame.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Legal Practice section end -->
+
+        <!-- our client section start -->
+        <section class="our-client text-center mt-5">
+            <h2 class="pt-5 pb-4">What Our Client Say</h2>
+            <p>
+                Here are some testimonials from clients who have worked with us:</p>
+
+            <!-- carousel start -->
+            <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner text-white">
+                    <div class="carousel-item">
+                        <div class="h-100 d-flex align-items-center justify-content-center flex-column ">
+                            <img src="asset/images/Ellipse 1.png" alt="" srcset="">
+                            <h3 class="my-3">Awlad Hossain</h3>
+                            <h5 class="mb-3">Full Stack Developer</h5>
+                            <p class="w-75">I am comfortable working with different programming languages, databases,
+                                and frameworks. I can helps build and maintain both the front-end and the back-end of
+                                your website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="h-100 d-flex align-items-center justify-content-center flex-column ">
+                            <img class="rounded-circle" src="asset/images/upwork2.webp" alt="" srcset="">
+                            <h3 class="my-3">Samiya Sultana</h3>
+                            <h5 class="mb-3">Web Designer</h5>
+                            <p class="w-75">Hi,
+                                I’m a UI/UX Designer with a passion for creating inspiring and influential designs.
+
+                                For me; The design is not just doing incredible things, it is about solving a problem
+                                and being able to communicate clearly and easily a solution to meet the needs of a user.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100 d-flex align-items-center justify-content-center flex-column ">
+                            <img class="rounded-circle" src="asset/images/upwork1.webp" alt="" srcset="">
+                            <h3 class="my-3">Sakib Al Hasan</h3>
+                            <h5 class="mb-3">UIX Designer</h5>
+                            <p class="w-75">If you are looking for an all-things-branding graphic designer, then look no
+                                further. With over four years of professional experience and a Bachelors of Arts degree
+                                in Media Studies, I am capable of bringing your brand full-circle with my verse skills
+                                ranging from photography,</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- carousel end -->
+        </section>
+        <!-- our client section end -->
+
+        <!-- FAQ section start -->
+        <section class="mt-5 text-center">
+            <h2 class="pt-5">Frequently Asked Any Questions</h2>
+            <p>Answers to some of the questions that have been asked about us</p>
+
+            <div class="row mt-5 g-3">
+                <div class="col-12 col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1) Defferance between flex box and grid
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox
+                                        Layout is that <strong> flexbox was designed for layout in one dimension -
+                                            either a row
+                                            or a column.</strong> Grid was designed for two-dimensional layout - rows,
+                                        and
+                                        columns at
+                                        the same time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-5 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2) What is purpose of media quary
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Media queries are a key part of responsive web design, as they <strong>allow you
+                                            to create different layouts depending on the size of the viewport, but they
+                                            can also be used to detect other things about the environment your site is
+                                            running on </strong>, for example whether the user is using a touchscreen
+                                        rather than a mouse
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3) What is css box model and how does it work
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        A box in CSS consists of a content area, which is where any text, images, or
+                                        other HTML elements are displayed. This is optionally surrounded by padding, a
+                                        border, and a margin, on one or more sides.<strong>The box model describes how
+                                            these elements work together to create a box as displayed by CSS.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border mt-5">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4) What is semantic tag
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The semantic HTML tags <strong>help the search engines and other user devices to
+                                            determine the importance and context of web pages.</strong> The pages made
+                                        with semantic elements are much easier to read. It has greater accessibility. It
+                                        offers a better user experience
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-md-0 mt-5">
+                    <img class="img-fluid" src="asset/images/faq.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+        <!--FAQ section end -->
+    </main>
+
+    <!-- footer start -->
+    <footer class="mt-5 bg-dark">
+        <div class=" row container mx-auto py-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img class="mb-5" src="asset/images/icon/logo.png" alt="logo">
+
+                <p>
+                    We are a law firm that doesn’t fear the difficult or the unknown.Any legal problem you may have will
+                    be solved by our experienced lawyers.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-5 text-white">Usefull Link</h3>
+                <ul class="list-unstyled ">
+                    <li class="mb-2"><a href="#" class="text-decoration-none ">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none">About</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none ">Cases</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none ">Blog</a></li>
+                    <li><a href="#" class="text-decoration-none ">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-5 text-white">Contact Now</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-4">555 4th 5t NW, Washington<br>
+                        DC 20530, United States</li>
+                    <li class="mb-4">
+                        +88 01750 000 000<br>
+                        +88 01750 000 000
+                    </li>
+                    <li class="mb-4">
+                        info@gmail.com <br>
+                        info@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h3 class="mb-5 text-white">Subscribe</h3>
+                <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+
+                <form class="position-relative">
+                    <input type="e-mail" class="form-control p-2" placeholder="E-mail" style="font-size: 18px;">
+                    <button class="btn position-absolute top-0 end-0 rounded py-2 px-3">
+                        <i class="fa-solid fa-location-arrow text-white"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bootstap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
